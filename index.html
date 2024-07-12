@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keshav Joshi's Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="files/Keshav joshi.png" alt="Keshav Joshi Logo">
+    </div>
+    <nav>
+      <div class="menu-toggle">☰</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <video autoplay muted loop class="hero-video">
+        <source src="files/Hero_video.mp4" type="video/mp4">
+      </video>
+      <div class="hero-content">
+        <a href="#projects" class="cta">Explore My Work</a>
+      </div>
+    </section>
+
+    <section id="about" class="slide-up">
+      <h2>About Me</h2>
+      <p>B.Tech student in Computer Science at Kalinga Institute of Industrial Technology. Proficient in
+        machine learning, Python, and SQL, with experience in web development, database management,
+        and creating automated solutions. Seeking opportunities to leverage my technical skills in software
+        development and data science</p>
+    </section>
+
+    <section id="skills" class="slide-up">
+      <h2>Skills</h2>
+      <div class="skills-container">
+        <div class="skill">
+          <label>Machine Learning</label>
+          <div class="skill-bar">
+            <div class="skill-level" data-level="85%"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <label>Python</label>
+          <div class="skill-bar">
+            <div class="skill-level" data-level="90%"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <label>SQL</label>
+          <div class="skill-bar">
+            <div class="skill-level" data-level="75%"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <label>Java</label>
+          <div class="skill-bar">
+            <div class="skill-level" data-level="80%"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="slide-up">
+      <h2>Experience</h2>
+      <div class="experience-container">
+        <div class="experience">
+          <h3>Python Developer Intern</h3>
+          <p>LTIMindtree</p>
+          <p>June 2024 - July 2024</p>
+          <p>
+            Developed an automatic email sender using Python, resulting in a 50% reduction in manual
+            communication time for exam results.
+            Developed a real-time project incorporating API calls for data retrieval and integration.
+            Utilized Python libraries (Pandas, NumPy) to clean and pre-process datasets, ensuring data
+            integrity and quality, which facilitated more accurate data analysis.
+            Collaborated with cross-functional teams to design and implement project features.
+          </p>
+        </div>
+        <div class="experience">
+          <h3>Web Developer Intern</h3>
+          <p>R Shree Prints</p>
+          <p>January 2024 - May 2024</p>
+          <p>Created an information website from scratch to enhance RShree Prints' online presence.
+            Designed and implemented a robust SQL database, improving data management efficiency
+            by 35%.
+            Used responsive design techniques and cross-browser testing to ensure website
+            compatibility across multiple devices, enhancing user experience.
+            Maintained clear and concise documentation for the website and database, facilitating
+            easier future maintenance and upgrades.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="slide-up">
+      <h2>Projects</h2>
+      <div class="tabs">
+        <button class="tab-button active" data-tab="all">All</button>
+        <button class="tab-button" data-tab="machine-learning">Machine Learning</button>
+        <button class="tab-button" data-tab="web-development">Web Development</button>
+        <button class="tab-button" data-tab="games">Games</button>
+      </div>
+      <div class="projects-carousel" data-tab-content="all">
+        <div class="project" data-link="https://github.com/Keshavj022/Stock-Price-Prediction-Using-LSTM">
+          <div class="project-inner">
+            <div class="project-front">
+              <h3>Stock Price Prediction Using LSTM</h3>
+            </div>
+            <div class="project-back">
+              <p>Utilized Yahoo Finance API to fetch historical stock price data.
+                Applied normalization techniques and created datasets for model training.
+                Implemented an LSTM neural network using TensorFlow to capture temporal dependencies
+                in stock prices.
+                Plotted actual vs. predicted stock prices using Matplotlib to visually assess model accuracy</p>
+            </div>
+          </div>
+        </div>
+        <div class="project" data-link="https://github.com/Keshavj022/Fruit_classification_model">
+          <div class="project-inner">
+            <div class="project-front">
+              <h3>Fruit Classification Model</h3>
+            </div>
+            <div class="project-back">
+              <p>Model for classifying fruits and vegetables.
+                Used pre-trained deep learning model based on the Fruits-360 dataset.
+                Capable of identifying 131 different types of fruits and vegetables.</p>
+            </div>
+          </div>
+        </div>
+        <div class="project" data-link="https://github.com/Keshavj022/Cat_vs_Dog_prediction">
+          <div class="project-inner">
+            <div class="project-front">
+              <h3>Cat vs Dog Prediction</h3>
+            </div>
+            <div class="project-back">
+              <p>Model to predict whether an image is of a cat or a dog.</p>
+            </div>
+          </div>
+        </div>
+        <div class="project" data-link="https://github.com/Keshavj022/Spam_email_prediction_model">
+          <div class="project-inner">
+            <div class="project-front">
+              <h3>Spam Email Prediction Model</h3>
+            </div>
+            <div class="project-back">
+              <p>A model to predict whether an email is spam or not.</p>
+            </div>
+          </div>
+        </div>
+        <div class="project" data-link="https://github.com/Keshavj022/California_House_prediction">
+          <div class="project-inner">
+            <div class="project-front">
+              <h3>California House Prediction</h3>
+            </div>
+            <div class="project-back">
+              <p>Model to predict house prices in California.</p>
+            </div>
+          </div>
+        </div>
+        <div class="project" data-link="https://github.com/Keshavj022/Diabetes_Prediction">
+          <div class="project-inner">
+            <div class="project-front">
+              <h3>Diabetes Prediction</h3>
+            </div>
+            <div class="project-back">
+              <p>A model to predict the likelihood of diabetes.</p>
+            </div>
+          </div>
+        </div>
+        <div class="project" data-link="https://github.com/Keshavj022/Password-Manager">
+          <div class="project-inner">
+            <div class="project-front">
+              <h3>Password Manager</h3>
+            </div>
+            <div class="project-back">
+              <p>An application to manage and store passwords securely.</p>
+            </div>
+          </div>
+        </div>
+        <div class="project" data-link="https://github.com/Keshavj022/ISS-Overhead-Notifier">
+          <div class="project-inner">
+            <div class="project-front">
+              <h3>ISS Overhead Notifier</h3>
+            </div>
+            <div class="project-back">
+              <p>An app to notify when the ISS is overhead.</p>
+            </div>
+          </div>
+        </div>
+        <div class="project" data-link="https://github.com/Keshavj022/amazon-clone">
+          <div class="project-inner">
+            <div class="project-front">
+              <h3>Amazon Clone</h3>
+            </div>
+            <div class="project-back">
+              <p>A clone of the Amazon website.</p>
+            </div>
+          </div>
+        </div>
+        <div class="project" data-link="https://github.com/Keshavj022/turtle_crossing">
+          <div class="project-inner">
+            <div class="project-front">
+              <h3>Turtle Crossing</h3>
+            </div>
+            <div class="project-back">
+              <p>A game where a turtle crosses the road avoiding obstacles.</p>
+            </div>
+          </div>
+        </div>
+        <div class="project" data-link="https://github.com/Keshavj022/snake_game">
+          <div class="project-inner">
+            <div class="project-front">
+              <h3>Snake Game</h3>
+            </div>
+            <div class="project-back">
+              <p>A classic snake game built using Python.</p>
+            </div>
+          </div>
+        </div>
+        <div class="project" data-link="https://github.com/Keshavj022/pong_game">
+          <div class="project-inner">
+            <div class="project-front">
+              <h3>Pong Game</h3>
+            </div>
+            <div class="project-back">
+              <p>A classic Pong game built using Python.</p>
+            </div>
+          </div>
+        </div>
+        <div class="project" data-link="https://github.com/Keshavj022/Dodgy_square">
+          <div class="project-inner">
+            <div class="project-front">
+              <h3>Dodgy Square</h3>
+            </div>
+            <div class="project-back">
+              <p>A game where you control a square to avoid obstacles.</p>
+            </div>
+          </div>
+        </div>
+        <div class="project" data-link="https://github.com/Keshavj022/Distance_Calculator">
+          <div class="project-inner">
+            <div class="project-front">
+              <h3>Distance Calculator</h3>
+            </div>
+            <div class="project-back">
+              <p>An app to calculate the distance between two points.</p>
+            </div>
+          </div>
+        </div>
+        <div class="project" data-link="https://github.com/Keshavj022/Tindog">
+          <div class="project-inner">
+            <div class="project-front">
+              <h3>Tindog</h3>
+            </div>
+            <div class="project-back">
+              <p>A Tinder-like app for dogs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="projects-carousel hidden" data-tab-content="machine-learning">
+        <!-- Machine Learning projects here -->
+        <div class="project" data-link="https://github.com/Keshavj022/Stock-Price-Prediction-Using-LSTM">
+          <div class="project-inner">
+            <div class="project-front">
+              <h3>Stock Price Prediction Using LSTM</h3>
+            </div>
+            <div class="project-back">
+              <p>A project using LSTM to predict stock prices.</p>
+            </div>
+          </div>
+        </div>
+        <div class="project" data-link="https://github.com/Keshavj022/Fruit_classification_model">
+          <div class="project-inner">
+            <div class="project-front">
+              <h3>Fruit Classification Model</h3>
+            </div>
+            <div class="project-back">
+              <p>A model to classify different types of fruits.</p>
+            </div>
+          </div>
+        </div>
+        <div class="project" data-link="https://github.com/Keshavj022/Cat_vs_Dog_prediction">
+          <div class="project-inner">
+            <div class="project-front">
+              <h3>Cat vs Dog Prediction</h3>
+            </div>
+            <div class="project-back">
+              <p>Model to predict whether an image is of a cat or a dog.</p>
+            </div>
+          </div>
+        </div>
+        <div class="project" data-link="https://github.com/Keshavj022/Spam_email_prediction_model">
+          <div class="project-inner">
+            <div class="project-front">
+              <h3>Spam Email Prediction Model</h3>
+            </div>
+            <div class="project-back">
+              <p>A model to predict whether an email is spam or not.</p>
+            </div>
+          </div>
+        </div>
+        <div class="project" data-link="https://github.com/Keshavj022/California_House_prediction">
+          <div class="project-inner">
+            <div class="project-front">
+              <h3>California House Prediction</h3>
+            </div>
+            <div class="project-back">
+              <p>Model to predict house prices in California.</p>
+            </div>
+          </div>
+        </div>
+        <div class="project" data-link="https://github.com/Keshavj022/Diabetes_Prediction">
+          <div class="project-inner">
+            <div class="project-front">
+              <h3>Diabetes Prediction</h3>
+            </div>
+            <div class="project-back">
+              <p>A model to predict the likelihood of diabetes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="projects-carousel hidden" data-tab-content="web-development">
+        <!-- Web Development projects here -->
+        <div class="project" data-link="https://github.com/Keshavj022/amazon-clone">
+          <div class="project-inner">
+            <div class="project-front">
+              <h3>Amazon Clone</h3>
+            </div>
+            <div class="project-back">
+              <p>A clone of the Amazon website.</p>
+            </div>
+          </div>
+        </div>
+        <div class="project" data-link="https://github.com/Keshavj022/amazon-clone">
+          <div class="project-inner">
+            <div class="project-front">
+              <h3>Tindog</h3>
+            </div>
+            <div class="project-back">
+              <p>A Tinder-like app for dogs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="projects-carousel hidden" data-tab-content="games">
+        <!-- Games projects here -->
+        <div class="project" data-link="https://github.com/Keshavj022/turtle_crossing">
+          <div class="project-inner">
+            <div class="project-front">
+              <h3>Turtle Crossing</h3>
+            </div>
+            <div class="project-back">
+              <p>A game where a turtle crosses the road avoiding obstacles.</p>
+            </div>
+          </div>
+        </div>
+        <div class="project" data-link="https://github.com/Keshavj022/snake_game">
+          <div class="project-inner">
+            <div class="project-front">
+              <h3>Snake Game</h3>
+            </div>
+            <div class="project-back">
+              <p>A classic snake game built using Python.</p>
+            </div>
+          </div>
+        </div>
+        <div class="project" data-link="https://github.com/Keshavj022/pong_game">
+          <div class="project-inner">
+            <div class="project-front">
+              <h3>Pong Game</h3>
+            </div>
+            <div class="project-back">
+              <p>A classic Pong game built using Python.</p>
+            </div>
+          </div>
+        </div>
+        <div class="project" data-link="https://github.com/Keshavj022/Dodgy_square">
+          <div class="project-inner">
+            <div class="project-front">
+              <h3>Dodgy Square</h3>
+            </div>
+            <div class="project-back">
+              <p>A game where you control a square to avoid obstacles.</p>
+            </div>
+          </div>
+        </div>
+        <div class="project" data-link="https://github.com/Keshavj022/Distance_Calculator">
+          <div class="project-inner">
+            <div class="project-front">
+              <h3>Distance Calculator</h3>
+            </div>
+            <div class="project-back">
+              <p>An app to calculate the distance between two points.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="certifications" class="slide-up">
+      <h2>Certifications</h2>
+      <div class="certifications-container">
+        <div class="certification" >
+          <img src="files/certificate1.png" alt="Certification 1">
+        </div>
+        <div class="certification" >
+          <img src="files/certificate2.png" alt="Certification 2">
+        </div>
+        <div class="certification" >
+          <img src="files/certificate3.png" alt="Certification 3">
+        </div>
+        <div class="certification" >
+          <img src="files/certificate4.png" alt="Certification 3">
+        </div>
+      </div>
+    </section>
+
+    <section id="resume" class="slide-up">
+      <h2>Resume</h2>
+      <div class="resume-container">
+        <a href="files/Keshav Joshi_Resume.pdf" class="download-btn" download="Keshav_Joshi_Resume.pdf">Download Resume</a>
+      </div>
+    </section>
+
+    <section id="contact" class="slide-up">
+      <h2>Contact</h2>
+      <div class="contact-container">
+        <div class="contact-card">
+          <h3>Email</h3>
+          <p><i class="fas fa-envelope"></i> <a href="mailto:joshikeshav2204@gmail.com">joshikeshav2204@gmail.com</a></p>
+        </div>
+        <div class="contact-card">
+          <h3>Phone</h3>
+          <p><i class="fas fa-phone"></i> +91 7001273575</p>
+        </div>
+        <div class="contact-card">
+          <h3>GitHub</h3>
+          <p><i class="fab fa-github"></i> <a href="https://github.com/Keshavj022" target="_blank">github.com/Keshavj022</a></p>
+        </div>
+        <div class="contact-card">
+          <h3>LinkedIn</h3>
+          <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/joshikeshav/" target="_blank">linkedin.com/in/joshikeshav</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Keshav Joshi</p>
+  </footer>
+
+  <div class="project-detail hidden">
+    <div class="back-arrow">x</div>
+    <div class="project-content">
+      <!-- Project details will be dynamically loaded here -->
+    </div>
+  </div>
+</body>
+</html>
