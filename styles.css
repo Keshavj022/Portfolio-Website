@@ -66,15 +66,15 @@ header nav ul li a {
   color: #fff;
   position: relative;
   overflow: hidden;
-  padding-top: 60px;
+  padding-top: 60px; /* Ensure the video is under the navbar */
 }
 
 .hero-video {
   position: absolute;
-  top: 20px;
+  top: 20px; /* Ensure the video is under the navbar */
   left: 0;
   width: 100%;
-  height: calc(100% - 60px); 
+  height: calc(100% - 60px); /* Adjust to ensure full coverage */
   object-fit: cover;
   z-index: -1;
 }
@@ -426,6 +426,7 @@ footer {
   }
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
   header nav ul {
     flex-direction: column;
