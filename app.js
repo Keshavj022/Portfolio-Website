@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   const sections = document.querySelectorAll('.slide-up');
-  
+
+  // Intersection Observer for sections
   const options = { threshold: 0.1 };
   const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
@@ -64,6 +65,24 @@ document.addEventListener('DOMContentLoaded', () => {
   observer.observe(skillsSection);
   skillsSection.addEventListener('transitionend', animateSkills, { once: true });
 
+  // Add hover effect and link to experience and certification cards
+  const experienceCards = document.querySelectorAll('.experience');
+  const certificationCards = document.querySelectorAll('.certification');
+
+  experienceCards.forEach(card => {
+    card.addEventListener('click', () => {
+      const link = card.getAttribute('data-link');
+      window.location.href = link;
+    });
+  });
+
+  certificationCards.forEach(card => {
+    card.addEventListener('click', () => {
+      const link = card.getAttribute('data-link');
+      window.location.href = link;
+    });
+  });
+});
 // Tab functionality for projects
 const tabButtons = document.querySelectorAll('.tab-button');
 const tabContents = document.querySelectorAll('[data-tab-content]');
